@@ -54,7 +54,7 @@ VAULT_MOUNT_POINT_EXTERNAL_SECRETS ?= ${VAULT_MOUNT_POINT}
 GIT_SHA ?= $(shell git rev-parse HEAD)
 
 # NEW_CLUSTER is set on command line by jx gitops apply for regen targets
-NEW_CLUSTER ?= true
+NEW_CLUSTER ?= false
 
 # You can disable force mode on kubectl apply by modifying this line:
 KUBECTL_APPLY_FLAGS ?= --force
